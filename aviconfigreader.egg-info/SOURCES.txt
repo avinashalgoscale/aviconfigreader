@@ -1,0 +1,8 @@
+setup.py
+aviconfigreader/__init__.py
+aviconfigreader/source.py
+aviconfigreader.egg-info/PKG-INFO
+aviconfigreader.egg-info/SOURCES.txt
+aviconfigreader.egg-info/dependency_links.txt
+aviconfigreader.egg-info/requires.txt
+aviconfigreader.egg-info/top_level.txt
