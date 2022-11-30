@@ -30,7 +30,7 @@ def readconfig(input_file, output_filename, output_file_extension):
         flat_dict = {}
         for sect in config.sections():
             for k,v in config.items(sect):
-                flat_dict[k] = v
+                flat_dict[k] = v.replace('"', '')
         if output_file_extension == ".env" or ".json":
             output_path = output_filename+output_file_extension
             with open(output_path, 'w') as output_file:
@@ -51,4 +51,4 @@ def readconfig(input_file, output_filename, output_file_extension):
     else:
         raise IOError("invalid input file format")
 
-# readconfig("sample.cfg", "outfile", ".json")
+readconfig("sample.cfg", "outfile", ".json")
