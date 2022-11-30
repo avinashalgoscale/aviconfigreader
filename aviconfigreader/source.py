@@ -51,4 +51,4 @@ def readconfig(input_file, output_filename, output_file_extension):
     else:
         raise IOError("invalid input file format")
 
-readconfig("sample.cfg", "outfile", ".json")
+# readconfig("sample.cfg", "outfile", ".json")
